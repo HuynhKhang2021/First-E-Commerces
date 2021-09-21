@@ -1,0 +1,44 @@
+@import "../../global.scss";
+.header {
+  min-height: 2em;
+  display: flex;
+  background: black;
+  justify-content: space-between;
+  .header-text {
+    color: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .header-link {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.8em;
+    a {
+      color: #ccc;
+      text-decoration: none;
+      i {
+        font-size: 1.2em;
+        width: 2em;
+        height: 100%;
+        text-align: center;
+        .facebook {
+          color: #3a589d;
+        }
+        .instagram {
+        }
+        .tiktok {
+        }
+        .twitter {
+        }
+        .envelope {
+        }
+        .pinterest {
+        }
+        .youtube {
+        }
+      }
+    }
+  }
+}

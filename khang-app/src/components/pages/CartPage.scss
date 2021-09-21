@@ -1,0 +1,44 @@
+.cart {
+  .cart-steps {
+    color: #ccc;
+    h4 {
+      text-transform: uppercase;
+      padding: 10px;
+      margin-bottom: 0;
+      &.active {
+        color: #000;
+      }
+    }
+    i {
+      font-size: 1.5em;
+      margin: auto;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    .cart-step__shopping {
+      margin-left: auto;
+    }
+    .cart-step__complete {
+      margin-right: auto;
+    }
+  }
+  .code-discount__heading {
+    font-weight: 700;
+    display: flex;
+    margin: auto;
+    margin-bottom: 2em;
+    &::before {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+    &::after {
+      content: '';
+      flex: 0.5;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}

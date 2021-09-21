@@ -1,0 +1,66 @@
+@import "../../../global.scss";
+.banner {
+  .banner-section {
+    .banner-section__active {
+      border-right: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+      .banner-section__active-img {
+        width: 50px;
+      }
+      .banner-section__active-title {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: black;
+        margin: 16px;
+      }
+      .banner-section__active-text {
+        font-size: 1em;
+        color: black;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  // Phần Image Banner
+  .banner-fill {
+    display: flex;
+    // margin: 15px;
+    .banner-fill__content {
+      width: 33.333333%;
+      position: relative;
+      min-height: 240px;
+      padding: 0;
+      display: flex;
+      border: black solid 8px;
+      overflow: hidden;
+      &:hover .banner-fill__image {
+        transform: scale(1.2);
+      }
+      .banner-fill__image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition: all 1s ease;
+      }
+      .banner-fill__text {
+        color: #fff;
+        margin: auto;
+        z-index: 1;
+        font-weight: 700;
+        text-align: center;
+      }
+      .banner-fill__overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}

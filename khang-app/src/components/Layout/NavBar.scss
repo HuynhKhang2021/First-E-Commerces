@@ -1,0 +1,73 @@
+@import "../../global.scss";
+nav {
+  display: flex;
+  min-height: 100px;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgb(161, 161, 161);
+  &::after {
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      bottom: 0;
+      content: '';
+      width: 80%;
+      border-bottom: 1px solid rgb(219, 216, 216);
+  }
+  .navbar-brand {
+    img {
+      width: 200px;
+    }
+  }
+  button {
+    color: black;
+  }
+  #navbarContent {
+    .navbar-nav {
+      display: flex;
+      span {
+        position: relative;
+        div {
+          position: absolute;
+          top: auto;
+          display: none;
+        }
+        &:hover {
+          div {
+            display: flex;
+          }
+        }
+      }
+      .nav-link {
+        color: $titleText;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 600;
+        img {
+          width: 20px;
+        }
+        &.active {
+          color: black;
+        }
+        &:last-child {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  .navbar-cart {
+    color: $titleText;
+    display: flex;
+    margin: auto;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    p {
+      margin: auto;
+    }
+    .cart-icon {
+      color: rgb(49, 47, 47);
+      margin: auto;
+      font-size: 2em;
+    }
+  }
+}
